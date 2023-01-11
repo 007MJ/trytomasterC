@@ -1,34 +1,16 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mnshimiy <mnshimiy@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 10:21:27 by mnshimiy          #+#    #+#             */
-/*   Updated: 2022/10/28 10:50:21 by mnshimiy         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <stdio.h>
 
-int	main(void)
+int main(void)
 {
-	int	n;
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
-	n = 3;
-	while (i < n)
+	int a =10, b =15;
+	printf("%d",a < b);
+	printf("%d", a + b > 12);
+	char *s = NULL;
+	if (!s)
 	{
-		i++;
-		while (j < i)
-		{
-			j++;
-			printf("#");
-		}
-		printf("\n");
+		printf("C'est commet tu pense !");
 	}
+	else
+		printf("c'est pas comme tu pense");
+
 }

@@ -1,0 +1,18 @@
+#all : prog = une varialbe
+
+#all : main.o putstr.o
+	gcc -o prog main.o putstr.o
+
+#main.o : main.c
+	gcc -o main.o -c main.c -Wall -Werror -Wextra
+
+
+#putstr.o : putstr.c
+	gcc -o putstr.o -c putstr.c -Wall -Wextra -Werror
+
+
+#clean :
+	rm -fr *.o
+
+#<cible> : <dependances>
+	<commande>
